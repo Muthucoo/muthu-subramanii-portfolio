@@ -36,3 +36,4 @@ Keep the relative path `assets/Muthu_Subramanii_Resume.pdf` unchanged unless you
 ## Updating the site
 
 Edit `index.html` in any text editor. The page uses plain HTML, CSS and vanilla JavaScript. No package installation or compilation is necessary.
+Portfolio deployment refresh — November 2026
