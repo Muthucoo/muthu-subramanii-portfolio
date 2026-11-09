@@ -82,6 +82,124 @@
       .board-step b{font-size:11px}.board-step small{font-size:9px}
       .board-detail{bottom:-9px;font-size:10px}
     }
+
+    /* Mobile orbit repair: square, centred tracks keep all four cards visible.
+       Desktop layout and animation timings remain unchanged. */
+    @media (max-width: 680px) {
+      .system-stage {
+        width: min(100%, 360px);
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        transform: none;
+        transform-origin: center;
+        margin: 12px auto 8px;
+        overflow: visible;
+      }
+      .stage-ring.one { width: 84%; height: 84%; }
+      .stage-ring.two { width: 65%; height: 65%; }
+      .stage-ring.three { width: 96%; height: 96%; }
+      .stage-core {
+        width: 36%;
+        max-width: 126px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+      }
+      .orbit-track { inset: 0; width: 100%; height: 100%; }
+      .orbit-track .orbit-node {
+        top: 13% !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: 50%;
+        width: 25%;
+        max-width: 96px;
+        min-width: 0;
+        height: auto;
+        padding: 9px 7px;
+        text-align: center;
+        white-space: normal;
+      }
+      .orbit-node b { font-size: clamp(10px, 2.8vw, 11px); line-height: 1.2; }
+      .orbit-node small {
+        display: block;
+        font-size: clamp(7px, 2.1vw, 8px);
+        letter-spacing: .02em;
+        line-height: 1.25;
+      }
+      .stage-caption {
+        bottom: 0;
+        left: 50%;
+        width: 94%;
+        white-space: normal;
+        text-align: center;
+        font-size: clamp(7px, 2vw, 9px);
+        letter-spacing: .05em;
+        line-height: 1.25;
+      }
+
+      .board-diagram,
+      .board-diagram.reveal,
+      .board-diagram.reveal.visible {
+        width: min(100%, 360px);
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        min-height: 0;
+        margin: 8px auto 34px;
+        transform: none !important;
+        overflow: visible;
+      }
+      .board-circle.c1 { width: 88%; height: 88%; }
+      .board-circle.c2 { width: 66%; height: 66%; }
+      .board-center {
+        width: 35%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+      }
+      .board-orbit-track {
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .board-orbit-track .board-step {
+        top: 13% !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: 50%;
+        width: 26%;
+        max-width: 98px;
+        min-width: 0;
+        height: auto;
+        padding: 9px 7px;
+        text-align: center;
+        white-space: normal;
+      }
+      .board-step b { font-size: clamp(9px, 2.6vw, 11px); line-height: 1.2; }
+      .board-step small {
+        display: block;
+        font-size: clamp(7px, 2vw, 9px);
+        line-height: 1.25;
+      }
+      .board-detail {
+        left: 50%;
+        bottom: -29px;
+        width: 94%;
+        font-size: 10px;
+        line-height: 1.35;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .orbit-node small,
+      .board-step small { display: none; }
+      .orbit-track .orbit-node,
+      .board-orbit-track .board-step { padding: 8px 5px; }
+      .orbit-node b { font-size: 10px; }
+      .board-step b { font-size: 9px; }
+      .stage-core strong { font-size: 18px; }
+      .board-center b { font-size: 17px; }
+    }
+
   </style>
 </head>
 <body>
