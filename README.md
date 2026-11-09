@@ -1,34 +1,29 @@
-# Muthu Subramanii — Professional Portfolio
+# Muthu Subramanii — Interactive Professional Portfolio
 
-A responsive, animated portfolio presenting business operations, strategy and programme management experience across fintech, global banking, enterprise HR operations and public policy.
+A responsive personal portfolio presenting business operations, strategy execution, programme management, enterprise operations and a public-policy perspective.
 
-## Files in this package
-- `index.html` — complete website; CSS and JavaScript are embedded.
-- `assets/Muthu_Subramanii_CV.pdf` — latest CV supplied on 9 November 2026.
+## Package contents
+- `index.html` — complete website with embedded CSS and JavaScript.
+- `assets/Muthu_Subramanii_CV.pdf` — latest CV supplied by Muthu.
 
-## Interactions
-- Animated hero and operating-model constellation.
-- Scroll-triggered content reveals and animated achievement counters.
-- Selectable career timeline.
-- Expandable case studies.
-- Interactive Board meeting cycle.
-- Interactive capability tabs.
-- Responsive navigation and reduced-motion support.
+## Interactions and motion
+- Hero operating-model constellation: four square capability cards continuously orbit the central circle while remaining upright and clickable.
+- Rotating circular tracks with visible moving markers in both the hero visual and Board meeting section.
+- Board meeting cycle: four clickable cards orbit the central Board meeting circle; selecting a card updates the supporting explanation.
+- Scroll-triggered reveals and animated achievement counters.
+- Selectable career timeline, expandable case studies and interactive capability tabs.
+- Responsive navigation and reduced-motion support for visitors who prefer less animation.
 
-## Replace the existing GitHub Pages website
-1. Extract this ZIP locally. The ZIP contains `index.html`, `README.md`, and the `assets` folder at its root.
-2. In the GitHub repository, open the root folder and choose **Add file → Upload files**.
-3. Upload `index.html` and `README.md`, replacing the existing versions, then commit to `main`.
-4. Open the `assets` folder and choose **Add file → Upload files**.
-5. Upload `Muthu_Subramanii_CV.pdf`, replacing the existing PDF with the same name, then commit to `main`.
-6. GitHub Pages should build from `main` → `/(root)`. Check **Actions → pages build and deployment** for a successful run.
+## Publish or replace the existing GitHub Pages website
+1. Extract the ZIP package.
+2. In the existing GitHub repository, open the `main` branch.
+3. Upload the new `index.html` and choose to replace the existing file.
+4. Upload `assets/Muthu_Subramanii_CV.pdf` into the existing `assets` folder, replacing the old PDF.
+5. Commit directly to `main`.
+6. Keep GitHub Pages configured to publish from `main` and `/(root)`.
+7. Check the Actions tab for a successful `pages build and deployment` run.
 
-## Accuracy and presentation notes
-- The Standard Chartered experience reflects progression from Senior Analyst to Associate Manager, as stated in the latest CV.
-- Board meetings are described as conducted in the capacity of COO; the site does not claim that the individual was Board Chairperson or Company Secretary.
-- The Startup India Seed Fund wording describes support for the Anna Incubator engagement towards ₹48 lakh in support.
-- Technical skills distinguish tools used professionally from developing or foundational exposure.
-- Public contact links are email and LinkedIn. The downloadable CV contains the full contact details.
+The website links to `assets/Muthu_Subramanii_CV.pdf`; keep that path and filename unchanged.
 
-## Public Policy section
-The academic areas are summarised from Takshashila's published PGP curriculum. Refer to the linked official programme page for the programme's detailed curriculum.
+## Accuracy notes
+The Board section describes meetings conducted by Muthu in his capacity as COO. It does not describe him as the Board Chairperson or Company Secretary. Technical learning-stage skills are labelled as developing or foundational.
